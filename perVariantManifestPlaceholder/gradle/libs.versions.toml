@@ -1,0 +1,13 @@
+[versions]
+androidGradlePlugin = "8.0.0-alpha10"
+kotlin = "1.7.20"
+
+[libraries]
+# Dependencies of the included build-logic
+android-gradlePlugin-api = { group = "com.android.tools.build", name = "gradle-api", version.ref = "androidGradlePlugin" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
+
